@@ -1,0 +1,16 @@
+.row-media{
+	margin-left: 10vw; 
+	margin-right: 10vw
+}
+
+.video{
+    min-height: 300px;
+}
+
+.box-coming-soon{
+    background-color: white;
+	border: 5px solid pink; 
+	font-size: calc(0.8vw + 0.8vh);
+    text-align: center;
+    width: 40%;
+}

@@ -1,0 +1,105 @@
+.desktop-img{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	height: 100vh;
+	width: 66vw;
+	object-fit: cover;
+}
+
+.right-col{
+	position: absolute;
+  	top: 50%;
+  	transform: translate(0, -50%);
+	margin-left: -15vw;
+	color: white;
+	opacity: 0; 
+	transition: opacity 1.5s ease-in-out; 
+
+}
+.fade-in{
+	opacity: 1;
+}
+
+.first-name{
+	font-size: 10vw;
+}
+
+.last-name{
+	font-size: 10vw;
+	margin-left: 5vw;
+}
+
+.desc{
+	font-size: 2vw; 
+	font-weight: bolder; 
+	margin-left: 17vw;
+}
+
+/* For Desktop View */
+@media screen and (min-width: 932px) {
+
+	.desktop{
+		display: block !important;
+	}
+	.mobile{
+		display: none !important;
+	}
+ }
+
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen
+and (max-device-width: 932px) {
+
+   .desktop{
+	   display: none !important;
+   }
+   .mobile{
+	   display: block !important;
+   }
+
+	.img-home-mobile{
+	width: 90vw; 
+	min-height: 70%;
+	object-fit: cover; 
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	}
+
+	.txt-home-mobile{
+	text-align: center; 
+	background-color: #f3e0f5;  
+	width: 90vw; padding-top: 50px; 
+	padding-bottom: 50px; 
+	border-bottom-left-radius: 20px; 
+	border-bottom-right-radius: 20px;
+	}
+
+	.name{
+	font-size: 15vw;
+	}
+
+	.desc{
+	font-size: 5vw; 
+	font-weight: bolder; 
+	padding-top: 20px;
+	margin-left: 0vw;
+	} 
+
+	.btn-about-me{
+	background-color: #5B8169;
+	border-radius: 10px;
+	}
+
+	.about-me-link{
+	text-decoration: none;
+	font-size: 2.5em;
+	color: white;
+	}
+
+	.about-me-link:hover{
+	color: black;
+	}
+}

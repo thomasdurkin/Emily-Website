@@ -1,0 +1,68 @@
+{% extends "navbar.html" %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/contact.css')}}">
+
+    <div class="top-margin bottom-margin vertical-center">
+        <div class="form-contact-border p-5">
+            <div class="form-header">Let's Create Together!</div>
+
+            <form class="contact-form mt-5 ps-5 pe-5 pb-5" method="POST">
+                <div class="row">
+                    <div class="col-md-12 col-xl-6 mt-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="name" class="form-control" name="name" placeholder="First + Last Name" required>
+                    </div>
+    
+                    <div class="col-md-12 col-xl-6 mt-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" name="email" placeholder="Email" required>
+                    </div>
+                </div>
+    
+                <div class="mt-3">
+                    <label for="subject" class="form-label">Subject Line</label>
+                    <input type="subject" class="form-control" name="subject" placeholder="Subject" required>
+                </div>
+    
+                <div class="mt-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea type="message" class="form-control" name="message" placeholder="Message" rows=6 required></textarea>
+                </div>
+                
+                <div class="vertical-center mt-5 mb-3">
+                    <button class="btn btn-submit" type="submit">Submit</button>
+                </div>
+
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                        <p class="alert-{{ category }} p-3" id="flash-message" style="text-align: center; transition: opacity 0.5s ease-out; opacity: 1;">
+                            {{ message }}
+                        </p>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+            </form>
+        </div>    
+    </div>
+    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // JavaScript to fade out the flash message after a certain duration
+            setTimeout(function() {
+                var flashMessage = document.getElementById('flash-message');
+                if (flashMessage) {
+                    flashMessage.style.opacity = '0';
+                    setTimeout(function() {
+                        flashMessage.style.display = 'none';
+                    }, 500); // Fade out duration (same as CSS transition duration)
+                }
+            }, 2000); // Duration after which the message fades out (in milliseconds)
+        });
+    </script>
+    
+
+{% endblock content %}
+

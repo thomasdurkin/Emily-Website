@@ -1,0 +1,66 @@
+.note-1{
+    background-color: #F9E4F6;
+	border: 5px solid #3C644B; 
+    text-align: center;
+    width: 70vw;
+}
+
+.note-2{
+    background-color: white;
+	border: 5px solid pink; 
+    text-align: center;
+    width: 70vw;
+}
+
+.intro-box{
+    background-color: white;
+	border: 5px solid pink; 
+    padding: 40px;
+    margin-left: 5vw;
+    margin-right: 10vw;
+    font-size: calc(0.8vh + 0.8vw);
+}
+
+.about-greeting{
+    font-size: 40px;
+	font-weight: 800;
+}
+
+.about-signature{
+	text-align: right; 
+	padding-right: 4vw; 
+	font-size: 40px; 
+	padding-bottom: 20px; 
+	font-weight: 800;
+}
+
+.box-text{
+	font-size: calc(0.8vh + 0.8vw);
+}
+
+.about-img{
+    object-fit: cover; 
+}
+.about-img-row{
+    margin-left: -15vw;
+}
+
+.about-img-gallery{
+	padding: 5px;
+}
+
+/* For Desktop View */
+@media screen and (min-width: 932px) {
+
+ }
+
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen
+and (max-device-width: 1024px) {
+    .about-img-row{
+        margin-left: 0vw;
+    }
+
+}
+

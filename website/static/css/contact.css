@@ -1,0 +1,29 @@
+.form-header{
+	text-align: center; 
+	font-weight: bold;
+    font-size: calc(2vh + 2vw);
+}
+
+.form-contact-border{
+	border: 3px solid #5B8169; 
+}
+
+
+.contact-form{
+	background-color: #F9E4F6; 
+}
+
+.form-label{
+    font-size: calc(0.5vw + 2vh);
+}
+
+.form-control{
+    font-size: calc(0.5vw + 1vh);
+}
+
+.btn-submit{
+	width: 80%;
+	color: white;
+	background-color: blue;
+    font-size: calc(0.5vw + 1vh);
+}
