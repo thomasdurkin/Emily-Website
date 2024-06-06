@@ -50,7 +50,7 @@
 }
 
 /* For Desktop View */
-@media screen and (min-width: 932px) {
+@media screen and (min-device-width: 932px) {
 
  }
 

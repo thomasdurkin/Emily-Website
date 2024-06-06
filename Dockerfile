@@ -4,12 +4,10 @@ WORKDIR /website
 
 COPY . .
 
-COPY requirements.txt .
-
 RUN pip install --upgrade pip
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-EXPOSE 8080
+EXPOSE 5000
 
-CMD ["waitress-serve", "--listen=0.0.0.0:8080", "application:app"]
+CMD ["waitress-serve", "--port=5000", "application:app"]
