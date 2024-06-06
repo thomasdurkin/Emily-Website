@@ -1,7 +1,7 @@
 .form-header{
 	text-align: center; 
 	font-weight: bold;
-    font-size: calc(2vh + 2vw);
+    font-size: calc(2vh + 1.5vw);
 }
 
 .form-contact-border{

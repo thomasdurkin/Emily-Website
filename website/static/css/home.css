@@ -37,6 +37,10 @@
 	margin-left: 17vw;
 }
 
+.navbar{
+	background-color: transparent;
+}
+
 /* For Desktop View */
 @media screen and (min-device-width: 932px) {
 
