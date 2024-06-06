@@ -48,19 +48,12 @@
 .about-img-gallery{
 	padding: 5px;
 }
+ 
+/* For Tablet/Mobile */
+@media screen and (max-device-width: 1367px) {
 
-/* For Desktop View */
-@media screen and (min-device-width: 932px) {
-
- }
-
-
-/* For Mobile Phones Portrait or Landscape View */
-@media screen
-and (max-device-width: 932px) {
-    .about-img-row{
+	.about-img-row{
         margin-left: 0vw;
     }
-
 }
 
