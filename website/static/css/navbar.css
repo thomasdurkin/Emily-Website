@@ -61,6 +61,11 @@
 	text-align:center; 
 	padding: 20px;
 	font-size: calc(0.5vw + 1vh);
+	text-decoration: none;
+}
+
+.footer-link:hover{
+	color: black;
 }
 
 .divider{
