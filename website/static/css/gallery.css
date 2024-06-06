@@ -35,9 +35,9 @@
     padding: 0;
     height: auto;
 }
-
+  
  /* For Desktop View */
- @media screen and (min-device-width: 1368px) {
+ @media screen and (min-device-width: 933px) {
 	.gallery-photo-title{
 
 	}
@@ -48,22 +48,7 @@
 
 	}
  }
-  
- /* For Tablet View */
- @media screen and (min-device-width: 933px) 
-     and (max-device-width: 1367px) {
-    
-	.gallery-photo-title{
-
-	}
-	.location{
-
-	}
-	.photographer{
-		
-	}
- }
-  
+ 
  /* For Mobile Phones Portrait or Landscape View */
  @media screen
      and (max-device-width: 932px) {

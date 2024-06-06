@@ -57,7 +57,7 @@
 
 /* For Mobile Phones Portrait or Landscape View */
 @media screen
-and (max-device-width: 1024px) {
+and (max-device-width: 932px) {
     .about-img-row{
         margin-left: 0vw;
     }
