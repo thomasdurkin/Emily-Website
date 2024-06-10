@@ -36,16 +36,16 @@ def contact():
 		)
 
 		msg.html = f"""<div> 
-						{ form_data['message'] } 
-					</div>
-					<br>
-				    <div>
-						{ form_data['email'] } 
-					</div>
-					<br>
-					<div>
-						{ form_data['name'] } 
-					</div>"""
+							{ form_data['message'] } 
+						</div>
+						<br>
+						<div>
+							{ form_data['email'] } 
+						</div>
+						<br>
+						<div>
+							{ form_data['name'] } 
+						</div>"""
 		
 		mail.send(msg)
 		flash('Your message has been sent!', 'success')

@@ -3,12 +3,12 @@
 
 {% block content %}
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css')}}">
+	<script src="{{ url_for('static', filename='javascript/home.js') }}"></script>
 
-	<div class='desktop' style="padding-bottom: 100px">
+	<div class='desktop bottom-margin'>
 		<div class="row">
 			<div class="col" style="flex: 2">
 				<img class="img-fluid desktop-img" 
-				style=""
 				src="../static/headshots/home picture.jpg">
 			</div>
 
@@ -22,15 +22,15 @@
 		</div>
 	</div>
 
-	<div class='mobile top-margin'>
+	<div class='mobile top-margin bottom-margin'>
 		<div class="vertical-center">
 			<img class="mt-5 img-home-mobile" src="../static/headshots/home picture.jpg">
 		</div>
 
-		<div class="vertical-center" style="padding-bottom: 150px;">
+		<div class="vertical-center">
 			<div class="txt-home-mobile">
-				<div class="name">Emily</div>
-				<div class="name">Durkin</div>
+				<div class="name mb-3">Emily</div>
+				<div class="name mb-3">Durkin</div>
 				<div class="desc">Actor | Dancer | Singer</div>
 				<button class="btn btn-about-me mt-3">
 					<a class="about-me-link" href="{{ url_for('about') }}">ABOUT ME</a>
@@ -38,14 +38,5 @@
 			</div>
 		</div>
 	</div>
-
-	<script>
-		window.onload = function() {
-			setTimeout(function() {
-				var fadeInElement = document.getElementById('home-text');
-    			fadeInElement.classList.add('fade-in');
-			}, 100);
-		};
-	</script>
 
 {% endblock content %}

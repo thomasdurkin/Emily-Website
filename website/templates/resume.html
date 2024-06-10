@@ -1,32 +1,30 @@
 {% extends "navbar.html" %}
 
 {% block content %}
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/resume.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/resume.css')}}">
 
-    <div class="container top-margin mb-5">
-        <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-10 col-xl-6">
-                <div style="text-align: center;">
-                    <img class="img-fluid" src="../static/headshots/Emily Durkin Headshot.jpg">
-                
-                    <div class="mt-5 mb-5">
-                        <a class="download download-text" href="../static/headshots/Emily Durkin Headshot.jpg" download>DOWNLOAD</a>
-                    </div>
-                </div>
-            </div>
+  <div class="container top-margin bottom-margin">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-10 col-xl-6">
+          <img class="img-fluid" src="../static/headshots/Emily Durkin Headshot.jpg">
+        
+          <div class="mt-5 mb-5">
+            <a class="download download-text" href="../static/headshots/Emily Durkin Headshot.jpg" download>DOWNLOAD</a>
+          </div>
+      </div>
 
-            <div class="col-sm-12 col-md-10 col-xl-6">
-                <div style="text-align: center;">
-                    <img class="img-fluid" src="../static/Emily Durkin Resume PDF.jpg">
-                
-                    <div class="mt-5 mb-5">
-                        <a class="download download-text" 
-                            href="../static/Emily Durkin Resume PDF.jpg" download>DOWNLOAD
-                        </a>
-                    </div>
-                </div>
-            </div>
+      <div class="col-sm-12 col-md-10 col-xl-6">
+        <div>
+          <img class="img-fluid" src="../static/Emily Durkin Resume PDF.jpg">
+        
+          <div class="mt-5 mb-5">
+            <a class="download download-text" 
+              href="../static/Emily Durkin Resume PDF.jpg" download>DOWNLOAD
+            </a>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
 {% endblock content %}

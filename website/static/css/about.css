@@ -1,28 +1,28 @@
 .note-1{
-    background-color: #F9E4F6;
+  background-color: #F9E4F6;
 	border: 5px solid #3C644B; 
-    text-align: center;
-    width: 70vw;
+  text-align: center;
+  width: 70vw;
 }
 
 .note-2{
-    background-color: white;
+  background-color: white;
 	border: 5px solid pink; 
-    text-align: center;
-    width: 70vw;
+  text-align: center;
+  width: 70vw;
 }
 
 .intro-box{
-    background-color: white;
+  background-color: white;
 	border: 5px solid pink; 
-    padding: 40px;
-    margin-left: 5vw;
-    margin-right: 10vw;
-    font-size: calc(0.8vh + 0.8vw);
+  padding: 40px;
+  margin-left: 5vw;
+  margin-right: 10vw;
+  font-size: calc(0.8vh + 0.8vw);
 }
 
 .about-greeting{
-    font-size: 40px;
+  font-size: 40px;
 	font-weight: 800;
 }
 
@@ -39,21 +39,37 @@
 }
 
 .about-img{
-    object-fit: cover; 
+  object-fit: cover; 
 }
 .about-img-row{
-    margin-left: -15vw;
+  margin-left: -15vw;
 }
 
-.about-img-gallery{
-	padding: 5px;
+.about-gallery{
+  margin-top: 100px;
+}
+
+.image-item{
+  padding: 5px;
+}
+
+/* For Desktop */
+ /* @media screen and (min-device-width: 1367px){
+
+} */
+
+/* For Mobile/Tablet */
+@media screen and (max-device-width: 1367px){
+	.about-img-row{
+    margin-left: 0vw;
+  }
 }
  
-/* For Tablet/Mobile */
-@media screen and (max-device-width: 1367px) {
+/* For Mobile */
+/* @media screen and (max-device-width: 750px) {
 
-	.about-img-row{
-        margin-left: 0vw;
-    }
-}
+	
+} */
+
+
 

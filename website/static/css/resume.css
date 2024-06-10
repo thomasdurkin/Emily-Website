@@ -14,12 +14,25 @@
 	margin-top: 30px;
 }
 
-
- /* For Mobile Phones Portrait or Landscape View */
-@media only screen
-and (max-device-width: 932px) {
-    
-    .download-text{
-        font-size: 30px;
-    }
+[class*="col-"] {
+    text-align: center;
 }
+
+/* For Desktop */
+@media screen and (min-device-width: 1367px){
+
+}
+
+/* For Tablet */
+@media screen and (min-device-width: 750px) and (max-device-width: 1367px){
+
+}
+ 
+/* For Mobile */
+@media screen and (max-device-width: 750px) {
+	.download-text{
+    font-size: 30px;
+  }
+}
+ 
+

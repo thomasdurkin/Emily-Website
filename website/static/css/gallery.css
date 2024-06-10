@@ -5,20 +5,13 @@
 	gap: 10px;
 }
 
-.image-item img {
-	width: 100%;
-	border-radius: 10px;
-	height: 100%;
-	object-fit: cover;
-	margin-bottom: 10px;
-}
-
 .img-content {
 	position: absolute;
 	top: 50%; right: 50%;
 	transform: translate(50%,-50%);
 	color: white;
 	opacity: 0;
+	text-align: center;
 }
 
 .image-item:hover img{
@@ -29,8 +22,8 @@
 	opacity: 1;
 }
 
- /* For Desktop */
- @media screen and (min-device-width: 1367px){
+/* For Desktop */
+@media screen and (min-device-width: 1367px){
 	.column {
 		flex: 24%;
 	}
@@ -41,12 +34,26 @@
 	.column {
 		flex: 49%;
 	}
+
+	.title{
+		font-size: 4vw;
+	}
+
+	.location, .photographer{
+		font-size: 2vw;
+	}
 }
  
 /* For Mobile */
 @media screen and (max-device-width: 750px) {
-
 	.row {
 		flex-direction: column;
+	}
+	.title{
+		font-size: 4vh;
+	}
+
+	.location, .photographer{
+		font-size: 1.5vh;
 	}
 }

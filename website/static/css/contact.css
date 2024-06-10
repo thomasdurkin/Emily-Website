@@ -1,11 +1,11 @@
 .form-header{
 	text-align: center; 
 	font-weight: bold;
-    font-size: calc(2vh + 1.5vw);
+  	font-size: calc(2vh + 1.5vw);
 }
 
 .form-contact-border{
-	border: 3px solid #5B8169; 
+	border: 5px solid #5B8169; 
 }
 
 
@@ -14,16 +14,45 @@
 }
 
 .form-label{
-    font-size: calc(0.5vw + 2vh);
+  font-size: calc(0.5vw + 2vh);
 }
 
 .form-control{
-    font-size: calc(0.5vw + 1vh);
+  font-size: calc(0.5vw + 1vh);
 }
 
 .btn-submit{
 	width: 80%;
 	color: white;
-	background-color: blue;
-    font-size: calc(0.5vw + 1vh);
+	background-color: #ADD8E6;
+  	font-size: calc(0.7vw + 1.2vh);
+}
+
+.flash-msg{
+	text-align: center; 
+	transition: opacity 0.5s ease-out; 
+	opacity: 1;
+}
+
+/* For Desktop */
+ @media screen and (min-device-width: 1367px){
+
+}
+
+/* For Tablet */
+@media screen and (min-device-width: 750px) and (max-device-width: 1367px){
+
+}
+ 
+/* For Mobile */
+@media screen and (max-device-width: 750px) {
+	.form-header{
+		font-size: 3.5vh;
+	}
+	.form-label{
+		font-size: 3vh;
+	}
+	.form-control{
+		font-size: calc(0.5vw + 1.2vh);
+	}
 }

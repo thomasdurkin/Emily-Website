@@ -10,8 +10,8 @@
 
 .right-col{
 	position: absolute;
-  	top: 50%;
-  	transform: translate(0, -50%);
+ 	top: 50%;
+ 	transform: translate(0, -50%);
 	margin-left: -15vw;
 	color: white;
 	opacity: 0; 
@@ -37,11 +37,7 @@
 	margin-left: 17vw;
 }
 
-.navbar{
-	background-color: transparent;
-}
-
-/* For Desktop View */
+/* For Desktop/Tablet */
 @media screen and (min-device-width: 932px) {
 
 	.desktop{
@@ -50,19 +46,20 @@
 	.mobile{
 		display: none !important;
 	}
- }
+	.navbar{
+		background-color: transparent;
+	}
+}
 
+/* For Mobile */
+@media screen and (max-device-width: 932px) {
 
-/* For Mobile Phones Portrait or Landscape View */
-@media screen
-and (max-device-width: 932px) {
-
-   .desktop{
-	   display: none !important;
-   }
-   .mobile{
-	   display: block !important;
-   }
+  .desktop{
+	  display: none !important;
+  }
+  .mobile{
+	  display: block !important;
+  }
 
 	.img-home-mobile{
 	width: 90vw; 
@@ -74,7 +71,7 @@ and (max-device-width: 932px) {
 
 	.txt-home-mobile{
 	text-align: center; 
-	background-color: #f3e0f5;  
+	background-color: #f3e0f5; 
 	width: 90vw; padding-top: 50px; 
 	padding-bottom: 50px; 
 	border-bottom-left-radius: 20px; 
