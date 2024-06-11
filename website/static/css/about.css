@@ -1,75 +1,86 @@
-.note-1{
+ .note-1{
   background-color: #F9E4F6;
 	border: 5px solid #3C644B; 
   text-align: center;
-  width: 70vw;
+  width: 90vw;
+  padding: 10px;
 }
 
 .note-2{
   background-color: white;
 	border: 5px solid pink; 
   text-align: center;
-  width: 70vw;
+  width: 90vw;
+  padding: 10px;
+}
+
+.box-text{
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 9vw;
 }
 
 .intro-box{
   background-color: white;
-	border: 5px solid pink; 
-  padding: 40px;
-  margin-left: 5vw;
-  margin-right: 10vw;
-  font-size: calc(0.8vh + 0.8vw);
+  border: 5px solid pink; 
+  padding: 80px;
+  font-size: 1.5rem;
+  flex: 0 0 40%;
 }
 
 .about-greeting{
-  font-size: 40px;
-	font-weight: 800;
+  font-size: 3.5rem;
+  font-weight: 800;
 }
 
 .about-signature{
-	text-align: right; 
-	padding-right: 4vw; 
-	font-size: 40px; 
-	padding-bottom: 20px; 
-	font-weight: 800;
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-align: right; 
 }
 
-.box-text{
-	font-size: calc(0.8vh + 0.8vw);
+.intro-imgs{
+  flex: 0 0 60%;
+  object-fit: cover;
+  padding-left: 10rem;
 }
 
-.about-img{
-  object-fit: cover; 
-}
-.about-img-row{
-  margin-left: -15vw;
+.img-fluid{
+  max-height: 55vh;
+  padding: 1rem;
 }
 
-.about-gallery{
-  margin-top: 100px;
+.image-item img, img{
+  border-radius: 25px;
 }
 
-.image-item{
-  padding: 5px;
-}
-
-/* For Desktop */
- /* @media screen and (min-device-width: 1367px){
-
-} */
-
-/* For Mobile/Tablet */
+/* For Tablet */
 @media screen and (max-device-width: 1367px){
-	.about-img-row{
-    margin-left: 0vw;
+  .container, .intro-imgs{
+    padding: 0;
+  }
+  .intro-box, .intro-imgs{
+    flex-basis: 100%;
+  }
+
+  .intro-imgs{
+    display: flex;
+  }
+
+  .intro-imgs img{
+    margin-top: 3rem;
+    padding: 1rem;
   }
 }
  
 /* For Mobile */
-/* @media screen and (max-device-width: 750px) {
-
-	
-} */
-
-
-
+@media screen and (max-device-width: 750px) {
+  .box-text, .intro-box{
+    font-size: 2rem;
+  }
+}

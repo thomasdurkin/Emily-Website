@@ -5,68 +5,60 @@
 	<script src="{{ url_for('static', filename='javascript/about.js') }}"></script>
 
 	<div class='top-margin bottom-margin'>
-		<div class="row ms-5 me-5">
-			<div class="col-md-12 col-xl-6">
-				<div class="rounded-3 intro-box">
-					<p class="about-greeting">
-						Hi there!
-					</p>
-
-					<p class="about-body">
-						<br>
-						Welcome to my site! I am an actor, dancer, singer, choreographer, and visionary based in New York City.
-						<br><br>
-						Born and raised in Pittsburgh, Pennsylvania, my love for acting and theatre sparked from watching Judy Garland in 
-						<i>The Wizard of Oz.</i> My love for that classic story, and its lessons, has since grown into an expansive collection 
-						beginning with my own Dorothy Gale costume (ruby slippers and all) worn at my preschool graduation. Shortly after, I 
-						began my dance training at the age of three and have been movin' and groovin' ever since. 
-						<br><br>
-						I am a recent <i>summa cum laude</i> graduate of <b>Wagner College</b>, with a <b>B.A. in Theatre Performance</b> and 
-						a <b>Minor in Dance</b>. In addition to honing my skills as a performer at Wagner, I also fell in love with the art of 
-						creating movement and discovering the healing powers it possesses as a choreographer. It was in the halls of Wagner that 
-						I truly began to foster and grow into my essence - altruistic, zany, ray of sunshine, radiating enthusiasm for life, and 
-						striving to leave a little whimsy everywhere I go. I am also passionate about being involved in wildy creative theatre 
-						that opens our minds to being in the world and of the world - not to stand aside and watch it pass by. 
-						<br><br>
-						Happy to have you here!
-					</p>
-						
-					<p class="about-signature">
-						- Em
-					</p>
+		<div class="container">
+			<div class="rounded-3 intro-box hidden" data-animation-direction="left">
+				<p class="about-greeting">
+					Hi there!
+				</p>
+				<p class="about-body">
+					<br>
+					Welcome to my site! I am an actor, dancer, singer, choreographer, and visionary based in New York City.
+					<br><br>
+					Born and raised in Pittsburgh, Pennsylvania, my love for acting and theatre sparked from watching Judy Garland in 
+					<i>The Wizard of Oz.</i> My love for that classic story, and its lessons, has since grown into an expansive collection 
+					beginning with my own Dorothy Gale costume (ruby slippers and all) worn at my preschool graduation. Shortly after, I 
+					began my dance training at the age of three and have been movin' and groovin' ever since. 
+					<br><br>
+					I am a recent <i>summa cum laude</i> graduate of <b>Wagner College</b>, with a <b>B.A. in Theatre Performance</b> and 
+					a <b>Minor in Dance</b>. In addition to honing my skills as a performer at Wagner, I also fell in love with the art of 
+					creating movement and discovering the healing powers it possesses as a choreographer. It was in the halls of Wagner that 
+					I truly began to foster and grow into my essence - altruistic, zany, ray of sunshine, radiating enthusiasm for life, and 
+					striving to leave a little whimsy everywhere I go. I am also passionate about being involved in wildy creative theatre 
+					that opens our minds to being in the world and of the world - not to stand aside and watch it pass by. 
+					<br><br>
+					Happy to have you here!
+				</p>
+				<p class="about-signature">
+					- Em
+				</p>
+			</div>
+			<div class="intro-imgs">
+				<div class="hidden" data-animation-direction="right">
+					<img class="img-fluid" src="../static/about_photos/ABOUT ME 1.jpeg">
+				</div>
+				<div class="hidden" data-animation-direction="right">
+					<img class="img-fluid" src="../static/about_photos/ABOUT ME 1.jpeg">
 				</div>
 			</div>
+		</div>
 
-      <div class="col-md-12 col-xl-6">
-        <div class="row vertical-center about-img-row">
-          <div class="animate-right col-md-6 col-xl-5 mt-3" >
-            <img class="img-fluid about-img" src="../static/about_photos/ABOUT ME 1.jpeg">
-          </div>
-  
-          <div class="animate-right col-md-6 col-xl-5 mt-3">
-            <img class="img-fluid about-img" src="../static/about_photos/ABOUT ME 2.jpeg">
-          </div>
-        </div>
+		<div class="vertical-center mt-5">
+			<div class="rounded-3 note-1 hidden" data-animation-direction="up">
+			  <p class="box-text">
+				Aside from making art, you can find me collecting vinyl records, watching an Audrey Hepburn movie, indulging in a black raspberry/vanilla soft serve twist with rainbow sprinkles, walking in between the shelves of a bookstore, and hanging with my pup Kipper. 	
+			  </p>
 			</div>
 		</div>
-    
-    <div class="vertical-center mt-3">
-      <div class="rounded-3 note-1 hidden" data-animation-direction="up">
-        <p class="box-text">
-          Aside from making art, you can find me collecting vinyl records, watching an Audrey Hepburn movie, indulging in a black raspberry/vanilla soft serve twist with rainbow sprinkles, walking in between the shelves of a bookstore, and hanging with my pup Kipper. 	
-        </p>
-      </div>
-    </div>
-		
-    <div class="vertical-center mt-3">
-      <div class="rounded-3 note-2 hidden" data-animation-direction="up">
-        <p class="box-text">
-          Here are some pictures of my core memories as of late - all things love and joy! 	
-        </p>
-      </div>  
-    </div>
-		
-		<div class="row g-0 h-100 ms-5 me-5 mt-3 about-gallery">
+			  
+		<div class="vertical-center mt-5">
+			<div class="rounded-3 note-2 hidden" data-animation-direction="up">
+				<p class="box-text">
+				Here are some pictures of my core memories as of late - all things love and joy! 	
+				</p>
+			</div>  
+		</div>
+
+		<div class="row g-0 h-100 ms-5 me-5 mt-5 about-gallery">
 			<div class="col-sm-6 col-xl-3 image-item hidden" data-animation-direction="up">
 				<img class="img-fluid" src="../static/about_photos/ABOUT ME 3.jpg">
 			</div>
@@ -99,5 +91,10 @@
 				<img class="img-fluid" src="../static/about_photos/ABOUT ME 10.jpeg">
 			</div>
 		</div>
+
+		
+
 	</div>
+    
+    
 {% endblock content %}

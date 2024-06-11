@@ -9,7 +9,7 @@ window.onload = function() {
             if(entry.isIntersecting) {
                 let direction = entry.target.dataset.animationDirection;
                 let animationClass = `animate-${direction}`;
-                entry.target.classList.add('animate-up');
+                entry.target.classList.add(animationClass);
                 observer.unobserve(entry.target);
             }
         });
@@ -22,3 +22,4 @@ window.onload = function() {
         observer.observe(i);
     });
 };
+

@@ -107,16 +107,19 @@
 
 .animate-down{
 	opacity: 1;
+  transition: opacity 1.5s ease-in-out; 
 	animation: slideDown 1.5s forwards;
 }
 
 .animate-right{
 	opacity: 1;
+  transition: opacity 1.5s ease-in-out; 
 	animation: slideRight 1.5s forwards;
 }
 
 .animate-left{
 	opacity: 1;
+  transition: opacity 1.5s ease-in-out; 
 	animation: slideLeft 1.5s forwards;
 }
 
